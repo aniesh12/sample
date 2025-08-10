@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %} Contact {% endblock %}
+{% load static %}
+{% block content %}
+<div class="Contact_page">
+<div class="row ">
+    <div class="Cont-referense p-5 col-12 col-md-6">
+        <article>
+            <h2 class="col-md-4">Questions?</h2>
+            <h2 class="col-md-4">comments?</h2>
+            <h2 class="col-md-9">We'd love to hear from you.</h2>
+            <br>
+            <p class="col-10">The school is open 10:00am to 5:00pm Tuesday to Friday and 10:00am to 3:00pm on Saturday. During July and August Summer Camps, we're open from Monday to Friday 8:30am to 4:30pm.</p>
+            <address class="col-5 col-lg-4">
+                Our mailing address is: <br>
+                152A Charlotte Street,<br>
+                Peterborough on <br>
+                Phone: 705-742-3221 <br>
+            </address>
+            <div class="icon d-flex justify-content-between col-2">
+                <a href=""><i class="fa-brands fa-facebook-f fa-lg" style="color: white"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-lg" style="color: white"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter fa-lg" style="color: white"></i></a>
+            </div>
+            </article>
+    </div>
+
+    <div class="Cont-form col-12 col-md-6">
+        <form class="col-12 pt-5" action="" method="post">
+            {% csrf_token %}
+           <div class="for-di"> 
+             <input class="col-10 col-md-8 p-2" type="text" name="" id="" class="col-6" placeholder="Enter your Name"> <br>
+            <input class="col-10 col-md-8 p-2" type="email" name="" id="" placeholder="Enter a valid email address"> <br>
+            <textarea class="col-10 col-md-8  p-2 " row="9" name="" id="" placeholder="Enter your message"></textarea> <br>
+            <input type="submit" value="Submit"  class="col-4 col-md-2 p-2 c-btn "> <br>
+           </div>
+
+        </form>
+
+    </div>
+</div>
+</div>
+{% endblock %}

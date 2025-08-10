@@ -1,0 +1,30 @@
+
+
+
+.login-page{
+    background:linear-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.467)), url(../images/pexels-photo-14411385.jpeg);
+    max-width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+   
+   
+    
+}
+
+
+.FP-pass{
+    color: rgb(0, 208, 255);
+}
+
+.form-login h2{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 3.5vw;
+    margin: 0;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+}
